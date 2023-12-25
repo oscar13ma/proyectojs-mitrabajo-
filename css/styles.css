@@ -1,0 +1,326 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .boton1 {
+    width: 100px;
+     }
+    
+
+
+     .warnings {
+      width: 200px;
+      text-align: end;
+      margin: auto;
+      color: white;
+      /* padding-top: 20px; */
+      font-size: 20px;
+       }
+
+     
+
+
+
+
+
+
+       /* navegador de prueba */
+
+       :root {
+        --background-color: rgb(31, 31, 33);
+        --color-principal: rgb(237, 135, 60);
+        --color-texto: rgb(255, 255, 255);
+        --color-hover: rgb(243,175,125);
+    
+    
+     }
+     
+     
+     *{ 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    
+    }
+    body{
+        background-color: var(--background-color) ;
+    }
+    
+    header{
+        
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        height: 80px;
+        width: 100%;
+        color: var(--color-texto);
+        background: var(--background-color);
+    
+    }
+    header .contenedor{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1280px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    
+    header .logo{
+        
+        display: flex;
+        align-items: center;
+        
+    
+    }
+    header .logo ion-icon{
+        font-size: 35px;
+        color: var(--color-principal);
+        margin-right: 5px;
+    
+    
+    }
+    header .logo span{
+        font-size: 25px;
+        font-weight: 600;
+    
+    }
+    header .menuOpciones{
+       
+        height: auto;
+    }
+    header .menuOpciones ul{
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    header .menuOpciones li{
+        
+        list-style: none;
+        margin: 15px;
+        
+    
+    }
+    header .menuOpciones a{
+        color: var(--color-texto);
+        text-decoration: none;
+        transition: 0,2s ease;
+    }
+    header .menuOpciones a:hover{
+        color: var(--color-principal);
+    }
+    header .controles-usuario{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        
+       
+    
+    }
+    header .controles-usuario ion-icon{
+        font-size: 25px;
+        cursor: pointer;
+        color: var(--color-principal);
+    
+    }
+    header .controles-usuario ion-icon:hover{
+        color: var(--color-hover);
+    
+    }
+    header #btn-signUp{
+        border: none;
+        cursor: pointer;
+        width: 110px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: var(--color-principal);
+        color: var(--color-texto);
+        font-size: 15px;
+    
+    }
+    header #btn-signUp:hover{
+        background-color: var(--color-hover);
+    }
+     .btn-menu{
+        display: none;
+        font-size: 25px;
+        cursor: pointer;
+        color: var(--color-principal);
+    
+    }
+    
+    
+    @media all and (min-width: 0px) and (max-width: 700px){
+        header .logo{
+            flex-direction: column;
+            align-items: center;
+        } 
+         
+        header .menuOpciones ul{
+           display: none;
+        }
+        header .controles-usuario{
+            display: none;
+            
+        }
+        .btn-menu{
+            display: flex;
+        
+        }
+       
+         
+    }
+    
+    /* main */
+    
+    
+     main{
+        margin-top: 10px;
+    }
+    /* main .seccion-1 {
+       
+    } */
+    .cajaCentral{
+        max-width: 1280px;
+        margin: 0 auto;
+       
+        display: flex ;
+       
+        height: 100vh;
+        width: 100%;
+        
+        align-items: center;
+        justify-content: center;
+       
+    
+    }
+    
+    
+    
+    main .seccion-1 img{
+        width: 50vw;
+        height: 50%;
+      
+    } 
+     .caja1 {
+        /* border: 2px solid red; */
+        width: 50vh;
+    
+        background-color: grey;
+     }
+        
+    
+    /* css que corresponde de mi trabajo */
+
+
+
+    
+
+   
+    #username {
+        
+        border: 1px solid black;
+        input:focus{
+            outline: none;
+        }
+     }
+        #password1 {
+        border: 1px solid black;
+        input:focus{
+            outline: none;
+        }
+    }
+    
+    #exampleCheck1{
+        border: 2px solid black;
+        input:focus{
+            outline: none;
+        }
+         }
+
+
+         .swal-button {
+            padding: 7px 19px;
+            border-radius: 2px;
+            background-color:   #0dcaf0;
+            font-size: 16px;
+            border: 1px solid #3e549a;
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+          }
+          .swal-modal {
+            background-color: #6c757d;
+            border: 3px solid white;
+          }
+        
+          .swal-title {
+            color: #fff;
+          }
+          .swal-text {
+            color: #fff;
+          }
+
+          #borde {
+            border: 2px solid white;
+          }
+          #email2 {
+            background-color: #6c757d;
+            color: white;
+            border: 1px solid white;
+            
+           
+
+          }
+          #adress {
+            background-color: #6c757d;
+            color: white;
+            border: 1px solid white;
+            input:focus{
+                outline: none;
+            }
+
+          }
+          #phone {
+            background-color: #6c757d;
+            color: white;
+            border: 1px solid white;
+           
+            }
+
+          
+          #codPos {
+            background-color: #6c757d;
+            color: white;
+            border: 1px solid white;
+            input:focus{
+                outline: none;
+            }
+
+          }
+          #password {
+            background-color: #6c757d;
+            color: white;
+            border: 1px solid white;
+            input:focus{
+                outline: none;
+            }
+
+          }
+          #password2 {
+            background-color: #6c757d;
+            color: white;
+            border: 1px solid white;
+            input:focus{
+                outline: none;
+            }
+
+          }
+         
